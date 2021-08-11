@@ -88,7 +88,7 @@ reporting_status_extra_fields: []
 # Note that the GeoJSON files can either be remote (as in the example below) or
 # local, relative to the src_dir specified above.
 map_layers:
- - geojson_file: map_TK.geojson
+ - geojson_file: https://github.com/beyersar/DataTK/blob/c806ffefc061e90b13bca63588e889883485f0b3/map_TK.geojson
    name_property: OTEIL
    id_property: spatial_na
    output_subfolder: tkortsteil
