@@ -87,12 +87,12 @@ reporting_status_extra_fields: []
 # below and adjust if you would like to use the Open SDG mapping functionality.
 # Note that the GeoJSON files can either be remote (as in the example below) or
 # local, relative to the src_dir specified above.
-map_layers:
- - geojson_file: https://opendata.arcgis.com/datasets/92ebeaf3caa8458ea467ec164baeefa4_0.geojson
-   name_property: ctry19nm
-   id_property: ctry19cd
-   output_subfolder: country
-   filename_prefix: indicator_
+# map_layers:
+#  - geojson_file: https://opendata.arcgis.com/datasets/92ebeaf3caa8458ea467ec164baeefa4_0.geojson
+#    name_property: ctry19nm
+#    id_property: ctry19cd
+#    output_subfolder: country
+#    filename_prefix: indicator_
 
 # Documentation settings
 # ----------------------
@@ -113,3 +113,11 @@ docs_intro: This is a list of examples of endpoints and output that are
 # This is mainly intended to show units of measurement and series, which are not
 # normally considered "disaggregation".
 # docs_extra_disaggregations: ['Units', 'Series']
+
+
+map_layers:
+ - geojson_file: tkortsteil.geojson
+   name_property: OTEIL
+   id_property: spatial_na
+   output_subfolder: ortsteil
+   filename_prefix: indicator_
